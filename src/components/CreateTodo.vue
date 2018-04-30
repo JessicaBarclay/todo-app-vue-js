@@ -1,7 +1,7 @@
 <template>
   <div class='ui basic content center aligned segment'>
     <button class='ui basic button icon' v-on:click="openForm" v-show="!isCreating">
-      +
+      <i class='plus icon'></i>
     </button>
     <div class='ui centered card' v-show="isCreating">
       <div class='content'>
@@ -12,13 +12,13 @@
           </div>
           <div class='field'>
             <label>Description</label>
-            <input  v-model="descriptionText" type='text' ref='description' defaultValue="">
+            <input v-model="descriptionText" type='text' ref='description' defaultValue="">
           </div>
           <div class='ui two button attached buttons'>
-            <button class='ui basic blue button' v-on:click="sendForm()">
+            <button class='ui basic button icon' v-on:click="sendForm()">
               Create
             </button>
-            <button class='ui basic red button' v-on:click="closeForm">
+            <button class='ui basic button icon' v-on:click="closeForm">
               Cancel
             </button>
           </div>

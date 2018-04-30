@@ -9,7 +9,7 @@
 <script>
   import TodoList from './components/TodoList'
   import CreateTodo from './components/CreateTodo'
-  
+
   export default {
     components: {
       TodoList,
@@ -30,7 +30,7 @@
           description: 'yum yum',
         }],
       };
-    },    
+    },
   };
 </script>
 
